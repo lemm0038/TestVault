@@ -122,8 +122,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Component.cs" />
     <Compile Include="Models\Document.cs" />
     <Compile Include="Models\Experiment.cs" />
+    <Compile Include="Models\FactorLevel.cs" />
+    <Compile Include="Models\Schedule.cs" />
+    <Compile Include="Models\Step.cs" />
+    <Compile Include="Models\Task.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -160,7 +165,7 @@
     <Content Include="Images\Experiments.png" />
     <Content Include="Images\LabResources.png" />
     <Content Include="Images\Schedules.png" />
-    <Content Include="Images\Users.png" />
+    <Content Include="Images\People.png" />
     <Content Include="Scripts\jquery-1.6.2-vsdoc.js" />
     <Content Include="Scripts\jquery-1.6.2.js" />
     <Content Include="Scripts\jquery-1.6.2.min.js" />
@@ -193,6 +198,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Experiments\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
