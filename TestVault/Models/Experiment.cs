@@ -13,6 +13,9 @@ namespace TestVault.Models
         public string Description { get; set; }
         public string Status { get; set; }
         public List<Document> Documents { get; set; }
+        public List<String> Schedules { get; set; }
+        public List<FactorLevel> FactorLevels { get; set; }
+        public List<Component> Components { get; set; }
         public DateTime WhenCreated { get; set; }
         public DateTime WhenUpdated { get; set; }
         public string WhoUpdated { get; set; }
