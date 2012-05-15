@@ -10,6 +10,6 @@ namespace TestVault.Models
         public int Id { get; set; }
         public string SerialNumber { get; set; }
         public string Type { get; set; }
-        public List<KeyValuePair<string, string>> Properties { get; set; }
+        public List<ComponentProperty> Properties { get; set; }
     }
 }

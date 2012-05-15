@@ -24,9 +24,19 @@ namespace TestVault
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapHttpRoute(
-                "Experiment",
+                "Experiments",
+                "api/experiments/",
+                new { controller = "Experiments", action = "GetExperiments" });
+
+            routes.MapHttpRoute(
+                "SingleExperiment",
                 "api/experiments/{number}",
-                new { controller = "Experiments", action = "GetByNumber", number = UrlParameter.Optional });
+                new { controller = "Experiments", action = "GetByNumber", number = "" });
+
+            routes.MapHttpRoute(
+                "SingleSchedule",
+                "api/schedules/{id}",
+                new { controller = "Schedules", action = "GetById", id = UrlParameter.Optional });
              
             routes.MapHttpRoute(
                 name: "DefaultApi",

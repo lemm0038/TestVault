@@ -11,5 +11,6 @@ namespace TestVault.Models
         public string Name { get; set; }
         public string ControlMode { get; set; }
         public decimal SetPoint { get; set; }
+        public List<StepCriteria> StepCriteria { get; set; }
     }
 }

@@ -119,15 +119,18 @@
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ExperimentsController.cs" />
+    <Compile Include="Controllers\SchedulesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Component.cs" />
+    <Compile Include="Models\ComponentProperty.cs" />
     <Compile Include="Models\Document.cs" />
     <Compile Include="Models\Experiment.cs" />
     <Compile Include="Models\FactorLevel.cs" />
     <Compile Include="Models\Schedule.cs" />
     <Compile Include="Models\Step.cs" />
+    <Compile Include="Models\StepCriteria.cs" />
     <Compile Include="Models\Task.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
